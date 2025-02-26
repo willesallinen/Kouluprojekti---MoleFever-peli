@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="score">SCORE: <span>00</span></h1>
+    <div class="board">
+        <div class="hole"></div>
+        <div class="hole"></div>
+        <div class="hole"></div>
+        <div class="hole"></div>
+        <div class="hole"></div>
+        <div class="hole"></div>
+        <div class="hole"></div>
+        <div class="hole"></div>
+        <div class="hole"></div>
+    </div>
+    <div class="cursor"></div>
+    <div class="leaves">
+        <div class="leaf"></div>
+        <div class="leaf"></div>
+        <div class="leaf"></div>
+        <div class="leaf"></div>
+        <div class="leaf"></div>
+    </div>
+    <div class="game-over">Game Over</div>
+    <div class="restart-text">Press Space to Restart</div>
+    <div class="best-scores">
+        <h2>Best Scores</h2>
+        <ol id="best-scores-list">
+            <li>0</li>
+            <li>0</li>
+            <li>0</li>
+        </ol>
+    </div>
+    <div class="start-text">Press Space to Start</div>
+    <script src="main.js"></script>
+    <script>
+        
+        window.addEventListener('load', () => {
+            const backgroundMusic = new Audio('assets/music.mp3');
+            backgroundMusic.loop = true;
+            backgroundMusic.play();
+        });
+    </script>
+</body>
+</html>
